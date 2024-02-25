@@ -1,5 +1,6 @@
 let btn__add = document.querySelector('.add')
 let container = document.querySelector('div')
+let todo = document.querySelector('ul')
 let input = document.querySelector('input')
 let template = document.querySelector('#element').content
 
@@ -8,7 +9,7 @@ const create__list = () => {
     let li = clone.querySelector('.item')
     li.textContent = li
     li.textContent = input.value
-    container.append(p)
+    todo.append(p)
     input.value = ''
 }
 
