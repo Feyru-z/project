@@ -12,13 +12,19 @@ body {
 
 .input__st{
     margin-right: 10px;
-    background-color: #e74c3c;
+    background-color: #7f7f7f;
     color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 3px;
     cursor: pointer;
+    size: 10px;
 }
+
+.input__st:hover {
+    background-color: #999;
+    border: 1px solid #000000;
+  }
 
 .container{
     max-width: 600px;
@@ -43,6 +49,11 @@ body {
 
 .item{
     text-align: center;
+}
+
+template{
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 600px){
