@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <header class="header">Todo list</header>
+    <header class="header"><div class="header_"><b>Todo list</b></div></header>
     <main class="main">
-      <button class="add input__st">Добавить</button>
-      <input class="input__st">
+      <div class="input">
+        <input class="input__st">
+        <button class="add input__st">Добавить</button>
+      </div>
       <div class="container"><ul></ul></div>
     </main>
     <footer class="footer"></footer>
-    <template id="element">
-      <li class="item"></li>
-      <button class="rem">Удалить</button>
-    </template>
+    <div>
+      <template id="element">
+        <li class="item"></li>
+        <button class="rem">Удалить</button>
+      </template>
+    </div>
+    
     <script src="code.js"></script>
   </body>
 </html>
