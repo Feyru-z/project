@@ -5,9 +5,9 @@ let template = document.querySelector('#element').content
 
 const create__list = () => {
     let clone = template.cloneNode(true)  
-    let p = clone.querySelector('.item')
-    p.textContent = p
-    p.textContent = input.value
+    let li = clone.querySelector('.item')
+    li.textContent = li
+    li.textContent = input.value
     container.append(p)
     input.value = ''
 }
