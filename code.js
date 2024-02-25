@@ -12,6 +12,7 @@ const create__list = () => {
     li.textContent = li
     li.textContent = input.value
     todo.append(li)
+    todo.append(btn__rem)
     input.value = ''
     localST('', li)
 }
