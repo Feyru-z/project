@@ -9,12 +9,10 @@ const create__list = () => {
     let clone = template.cloneNode(true)  
     let li = clone.querySelector('.item')
     let btn__rem = clone.querySelector('.rem')
-    li.textContent = li
     li.textContent = input.value
-    todo.append(li)
-    todo.append(btn__rem)
+    todo.append(clone)
     input.value = ''
-    localST('', li)
+    localST('todo', li.textContent)
 }
 
 const remove__LS = (n, item) => {
@@ -26,7 +24,9 @@ const remove__list = (item) => {
 }
 
 btn__add.addEventListener('click', create__list)
-btn__rem.addEventListener('click', remove__list)
+btn__rem.addEventListener('click', (e) => {
+    console.log(e.currentTarget)
+})
 
 function localST(n, item) {
     localStorage.setItem(n, JSON.stringify(item));
