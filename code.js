@@ -3,11 +3,12 @@ let container = document.querySelector('div')
 let todo = document.querySelector('ul')
 let input = document.querySelector('input')
 let template = document.querySelector('#element').content
-let btn__rem = document.querySelector('.rem')
+
 
 const create__list = () => {
     let clone = template.cloneNode(true)  
     let li = clone.querySelector('.item')
+    let btn__rem = clone.querySelector('.rem')
     li.textContent = li
     li.textContent = input.value
     todo.append(li)
