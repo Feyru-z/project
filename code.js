@@ -17,8 +17,12 @@ const create__list = () => {
     localST('', li)
 }
 
-const remove__list = (n, item) => {
+const remove__LS = (n, item) => {
     localStorage.removeItem(n, item)
+}
+
+const remove__list = (item) => {
+    item.remove()
 }
 
 btn__add.addEventListener('click', create__list)
