@@ -1,12 +1,15 @@
-btn__add = document.querySelector('.add')
-container = document.querySelector('div')
-input = document.querySelector('input')
+let btn__add = document.querySelector('.add')
+let container = document.querySelector('div')
+let input = document.querySelector('input')
+let template = document.querySelector('#element').content
 
 const create__list = () => {
-    let p = document.createElement('p') // заменить на template
-    p.classList.add('item')
+    let clone = template.cloneNode(true)  
+    let p = clone.querySelector('.item')
+    p.textContent = p
     p.textContent = input.value
-    container.appendChild(p)
+    container.append(p)
+    input.value = ''
 }
 
 btn__add.addEventListener('click', create__list)
