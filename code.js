@@ -9,7 +9,7 @@ const create__list = () => {
     let li = clone.querySelector('.item')
     li.textContent = li
     li.textContent = input.value
-    todo.append(p)
+    todo.append(li)
     input.value = ''
 }
 
